@@ -16,4 +16,4 @@ jobs:
         run: echo "Hello from GitHub Actions!"
 
       - name: Show Python version
-        run: python --versionnnnnnnn
+        run: python --version
