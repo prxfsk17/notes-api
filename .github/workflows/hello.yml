@@ -1,0 +1,19 @@
+name: Hello CI
+
+on: push
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download code
+        uses: actions/checkout@v4
+
+      - name: Show files
+        run: ls -la
+
+      - name: Say hello
+        run: echo "Hello from GitHub Actions!"
+
+      - name: Show Python version
+        run: python --version
